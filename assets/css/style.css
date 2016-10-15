@@ -1,0 +1,310 @@
+/*CSS foramatting on all elements*/
+*{
+	box-sizing: border-box;
+}
+
+/*Body Section CSS*/
+body{
+	background: url(../images/bgmain.png);
+
+}
+
+
+h1{
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	padding: 10px;
+	color: #4aaaa5;
+	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: .75px;
+}
+
+h2{
+	padding:10px;
+}
+
+header{
+	background: #fff;
+	height: 100%;
+	border-bottom: 2px solid #ccc;
+	margin-bottom: 15px;
+	overflow: auto;
+}
+
+nav{
+	width: 270px;
+	float: right;
+}
+
+main{
+	clear: both;
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+article{
+	float: left;
+	border: 1px #cccccc solid;
+	background: #fff;
+	width: 650px;
+	overflow: hidden;
+}
+
+aside{
+	float: right;
+	border: 1px #cccccc solid;
+	width: 270px;
+	background: #fff;
+
+}
+
+/*Header Section*/
+.wrapper{
+	max-width: 960px;
+	margin: 0 auto;
+	background: #fff;
+}
+
+.logo{
+	background: #4aaaa5;
+	width: 200px;
+	float: left;
+	height: 70px;
+}
+
+.name {
+  padding: 0px;
+  margin: 0px;
+  color:#fff;
+  text-align: center;
+  line-height: 70px;
+}
+
+.navi{
+	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif; 
+	font-size: 12px;
+	padding: 0 8px 0 8px;
+	float: left;
+	line-height: 70px;
+	color:#fff;
+	text-decoration: none;
+}
+
+.navi:hover{
+	background: #4aaaa5;
+}
+
+a:link {
+    color: #777777;
+    text-decoration: none;
+}	
+/*End of Header Section*/
+
+
+/*Main Section Elements*/
+.hadi, .abt, .connect {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.abt, .contact, .port{
+	font-weight: bolder;
+	font-size: 20px;
+	color: #4aaaa5;
+}
+
+.aboutmepic{
+	height: 250px;
+	float: left;
+	padding:8px;
+}
+
+.paragraphs, .form_item, .input_item{
+	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif; 
+	font-size: 12px;
+	padding: 10px;
+	color: #777;
+}
+
+.connect{
+	color: #4aaaa5;
+	width:270px;
+	font-weight: bolder;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+
+}
+
+.icons{
+	height: 48px;
+}
+/* End of Main Section Elements*/
+
+
+/*Portfolio Images in Array*/
+.img_array{
+	position: relative;
+	float: left;
+	margin: 8px;
+	width: 270px;
+}
+
+
+.array_img{
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	width: 270px;
+}
+
+.pic_caption{
+	position: absolute;
+	top: 140px;
+	z-index: 1;
+	width: 270px;
+	color: #fff;
+	line-height: 38px;
+	background-color: #4aaaa5;
+	padding:0;
+	text-align: center;
+	font-size: 15px;
+	letter-spacing: .5px;
+}
+
+.pic_caption:hover{
+	background-color: #666;
+}
+
+/*Contact me section*/
+.submit{
+	background-color: #4aaaa5;
+    border: 777 0.5px solid;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 8px;
+}
+
+
+
+/*Footer Section*/
+.footer {
+	clear: both;
+	background-color: #666666;
+	width:100%;
+	height:70px;
+	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif; 
+	color: #a6afb6;
+	text-align: center;
+	font-size: 10px;
+	line-height: 70px;
+	border-top: #4aaaa5 solid 6px;
+	margin-top: 15px;
+}
+/*End Footer Section*/
+
+/*Media Query for Index Page Responsiveness at breakpoints 980*/
+@media screen and (max-width: 980px) {
+	main{
+		width: 768px;
+	}
+	article{
+		width: 500px;
+	}
+
+	aside, .connect{
+		width: 240px;
+	}
+
+	.wrapper{
+		width: 768px;
+	}
+
+	.img_array{
+		float: none;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+}
+
+/*Media Query for Index Page Responsiveness at breakpoints 768*/
+@media screen and (max-width: 768px) {
+	main{
+		width: 640px;
+	}
+	article{
+		float: none;
+		width: 640px;
+	}
+
+	.wrapper{
+		width: 600px;
+	}  
+
+	.img_array{
+		float: left;
+		margin: 10px;
+		width: 220px;
+	}
+
+	.array_img{
+		width: 220px;
+	}
+
+	.pic_caption{
+		width: 220px;
+		line-height: 28px;
+		top: 120px;
+	}
+	aside, .connect{
+		clear: both;
+		float: none;
+		width: 640px;
+		margin-top: 20px;
+		margin-bottom: 20px; 
+	}
+}
+
+/*Media Query for Index Page Responsiveness at breakpoints 640*/
+@media screen and (max-width: 640px) {
+	main{
+		width: 480px;
+	}
+
+	nav{
+		float: none;
+		width: 480px;
+	}
+
+	article{
+		width: 480px;
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+
+	aside, .connect{
+		width: 480px;
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+
+	.wrapper{
+		width: 480px;
+	}    
+
+	.logo{
+		width: 480px;
+		float: none;
+	}
+
+	.img_array{
+		float: none;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+}
+
+
